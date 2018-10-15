@@ -10,4 +10,4 @@ function min(x, y) {
     return z;
 }
 
-console.log(min(5, 100));
+console.log(min(6.2, 6.1));
