@@ -10,3 +10,5 @@ function getAbsSum(arr) {
     }
     return x;
 }
+
+console.log(getAbsSum([1, -5, -7, 8, 199]));
