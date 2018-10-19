@@ -6,8 +6,9 @@
 // Return new array of sorted numbers.
 
 function sortNumsAscending(arr) {
-    arr.sort(function(a,b){
+    if (arr === null) return [];
+    arr.sort(function (a, b) {
         return a - b;
     });
-    return arr;
+        return arr;
 }
