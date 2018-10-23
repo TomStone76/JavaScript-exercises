@@ -11,4 +11,6 @@ function isSymmetrical(num) {
     }
 }
 
+console.log(isSymmetrical(122221));
+
 //Thanks to https://stackoverflow.com/questions/38188696/trying-to-find-if-a-number-is-a-palindrome-in-js for help with the syntax.
