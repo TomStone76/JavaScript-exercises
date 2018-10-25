@@ -3,5 +3,9 @@
 // Descending order is when you sort from highest to lowest.
 
 function sortDecending(num) {
-	
+    var a = num.toString();
+    var b = a.split("");
+    var c = b.sort().reverse();
+    var d = parseInt(c.join(""));
+    return d;
 }
