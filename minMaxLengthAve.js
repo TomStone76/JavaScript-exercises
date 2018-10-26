@@ -5,13 +5,16 @@
 // Average Value
 
 function minMaxLengthAverage(arr) {
-    var newArr = []
-    var a = Math.min(arr);
-    var b = Math.max(arr);
+    var newArr = [];
+    var a = Math.min(...arr);
+    var b = Math.max(...arr);
     var c = arr.length;
-    var reduce = (acc, cVal) => acc + cVal;
-    var d = reduce / c;
-    newArr.push(a, b, c, d);
+    const reducer = (accumulator, value) => (accumulator + value);
+    var d = arr.reduce(reducer);
+    var e = d/c
+    newArr.push(a);
+    newArr.push(b);
+    newArr.push(c);
+    newArr.push(e);
     return newArr;
-    
 }
