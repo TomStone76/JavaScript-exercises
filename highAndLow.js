@@ -4,13 +4,10 @@
 //"1 2 3"
 
 function highLow(str) {
-    let arr =  str.split(" "), firstArr = [], secondArr = [];
-    for (let i = 0; i < arr.length; i++) {
-        let x = parseInt(arr[i])
-        firstArr.push(x);
-    }
-    let max = Math.max(...firstArr), min = Math.min(...firstArr);
+    let arr =  str.split(" "), secondArr = [];
+    let max = Math.max(...arr), min = Math.min(...arr);
     secondArr.push(max, min)
     return secondArr.join(" ")
 }
 
+console.log(highLow("33 346 7511 1 7 7547"));
