@@ -7,8 +7,13 @@
 
 function XO(str) {
     let x, y;
-    for (let i = 0; i < str.length; i++) {
+    for (let i = 0; i < z.length; i++) {
         x = str.match(/x/gi).length;
         y = str.match(/o/gi).length;
+    }
+    if (x === y) {
+        return true;
+    } else {
+        return false;
     }
 }
