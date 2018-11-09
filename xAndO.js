@@ -4,3 +4,7 @@
 // Return a boolean value (true or false).
 // The string can contain any character.
 // When neither an x nor an o is in the string, return true.
+
+function XO(str) {
+    
+}
