@@ -6,5 +6,9 @@
 // When neither an x nor an o is in the string, return true.
 
 function XO(str) {
-    
+    let x, y;
+    for (let i = 0; i < str.length; i++) {
+        x = str.match(/x/gi).length;
+        y = str.match(/o/gi).length;
+    }
 }
