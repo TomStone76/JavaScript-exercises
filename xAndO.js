@@ -6,14 +6,23 @@
 // When neither an x nor an o is in the string, return true.
 
 function XO(str) {
+    let z = str;
     let x, y;
-    for (let i = 0; i < z.length; i++) {
-        x = str.match(/x/gi).length;
-        y = str.match(/o/gi).length;
+
+    if (z != "") {
+        for (let i = 0; i < z.length; i++) {
+            x = str.match(/x/gi).length;
+            y = str.match(/o/gi).length;
+        }
+
+        if (x === y) {
+            return true;
+        } else if (x != y) {
+            return false
+        }
     }
-    if (x === y) {
+    
+    if (z === "") {
         return true;
-    } else {
-        return false;
     }
 }
