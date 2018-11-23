@@ -4,5 +4,7 @@
 // Spaces will be included only when more than one word is present.
 
 function reverse(str) {
-	
+	for (let i = 0; i < str.length; i++) {
+        
+    }
 }
