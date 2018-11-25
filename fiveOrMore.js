@@ -6,5 +6,6 @@
 function reverse(str) {
 	for (let i = 0; i < str.length; i++) {
         //1. .split() to create an array
+        //2. use
     }
 }
