@@ -11,3 +11,5 @@ function missingNums(arr) {
     }
     return missing;
 }
+
+// Test.assertEquals(missingNums([7, 2, 3, 6, 5, 9, 1, 4, 8]), 10)
