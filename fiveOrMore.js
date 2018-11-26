@@ -4,10 +4,10 @@
 // Spaces will be included only when more than one word is present.
 
 function reverse(str) {
-	for (let i = 0; i < str.length; i++) {
-        let spl = str.split();
-        if () {
-            
+    let spl = str.split() //makes string into array
+	for (let i = 0; i < spl.length; i++) {
+        if (i.length >= 5) {
+            i.reverse()
         }
     }
     return spl;
