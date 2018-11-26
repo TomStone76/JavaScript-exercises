@@ -11,5 +11,5 @@ function reverse(str) {
             i.reverse()//
         }
     }
-    return spl;
+    return spl.join()//returns new string from original;
 }
