@@ -5,6 +5,7 @@
 
 function reverse(str) {
     let spl = str.split() //makes string into array
+    let x // empty variable to hold word to be reversed
 	for (let i = 0; i < spl.length; i++) { //initiates loop which will iterate through array
         if (i.length >= 5) {
             i.reverse()//
