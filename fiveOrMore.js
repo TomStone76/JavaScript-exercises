@@ -5,9 +5,9 @@
 
 function reverse(str) {
     let spl = str.split() //makes string into array
-	for (let i = 0; i < spl.length; i++) {
+	for (let i = 0; i < spl.length; i++) { //initiates loop which will iterate through array
         if (i.length >= 5) {
-            i.reverse()
+            i.reverse()//
         }
     }
     return spl;
