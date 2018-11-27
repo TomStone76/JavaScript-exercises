@@ -2,5 +2,11 @@
 // That is, the integer multiplied by all positive lower integers.
 
 function factorial(int) {
-	
+	if (int < 0) {
+
+    } else if (int == 0) {
+        
+    } else {
+        
+    }
 }
