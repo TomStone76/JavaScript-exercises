@@ -3,10 +3,10 @@
 
 function factorial(int) {
 	if (int < 0) {
-
+        return -1;
     } else if (int == 0) {
-        
+        return 1;
     } else {
-        
+        return (num * factorialize(num - 1));
     }
 }
