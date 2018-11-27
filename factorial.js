@@ -7,6 +7,8 @@ function factorial(int) {
     } else if (int == 0) {
         return 1;
     } else {
-        return (num * factorialize(num - 1));
+        return (int * factorial(int - 1));
     }
 }
+
+console.log(factorial(5));
