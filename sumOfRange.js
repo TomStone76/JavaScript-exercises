@@ -13,10 +13,11 @@ function findRange(start, end) {
     
 }
 
-
+let total = 0;
 
 function sum(arr) {
     for (var i = 0; i < SVGAnimatedNumberList.length; i++) {
+        total += arr[i];
     }
 }
 
