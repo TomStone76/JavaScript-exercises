@@ -2,7 +2,8 @@
 
 function doubleChar(str) {
     let newStr = '';
-    for (let i = 0; i < str.length; i++) {
-        
+    for (let i = 0, n = str.split('').length; i < n ; i++) {
+        chars += str[i] + str[i];
     }
+    return chars;
 }
