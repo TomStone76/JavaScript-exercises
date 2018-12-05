@@ -3,7 +3,9 @@
 function doubleChar(str) {
     let newStr = '';
     for (let i = 0, n = str.split('').length; i < n ; i++) {
-        chars += str[i] + str[i];
+        newStr += str[i] + str[i];
     }
-    return chars;
+    return newStr;
 }
+
+console.log(doubleChar("Yoshi"));
