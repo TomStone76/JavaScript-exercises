@@ -3,5 +3,7 @@
 // Is sorted from least to greatest value.
 
 function uniqueSort(arr) {
-	
+    let duplicates = arr.filter(function(item, index) {
+        
+    });
 }
