@@ -2,5 +2,8 @@
 // returns a new array in the same sequential order as the old array (minus duplicates).
 
 function removeDups(arr) {
-	
+	let duplicates = arr.filter(function(a, b) {
+        return arr.indexOf(a) >= b;
+    });
+    return duplicates;
 }
