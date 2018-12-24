@@ -10,7 +10,7 @@ function isPrime(num) {
         }
     }
     return num > 1
-}
+
 
 console.log(isPrime(1)); //false
 console.log(isPrime(2)); //true
