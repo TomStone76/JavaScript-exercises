@@ -27,4 +27,5 @@ function XO(str) {
     }
 }
 
-console.log(XO("abcdefghijklmnopqrstuvwxyz"));
+console.log(XO("abcdefghijklmnopqrstuvwxyz")); //logs true
+console.log(XO("xxxxxxxxxoooo")); //logs false
