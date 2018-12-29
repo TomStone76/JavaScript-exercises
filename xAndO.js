@@ -26,3 +26,5 @@ function XO(str) {
         return true;
     }
 }
+
+console.log(XO("abcdefghijklmnopqrstuvwxyz"));
