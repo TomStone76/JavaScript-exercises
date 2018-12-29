@@ -9,3 +9,8 @@ function comp(str1, str2) {
         return false;
     }
 }
+
+const x = "A pot of tea helps to pass the evening.";
+const y = "The small pup gnawed a hole in the sock.";
+
+console.log(comp(x, y));

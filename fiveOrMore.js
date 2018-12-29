@@ -10,7 +10,7 @@ function reverse(str) {
         if (i.length >= 5) {
             x.push(i.reverse())//
         }
-        else if (i.lenght <=5 ) {}
+        else if (i.length <=5 ) {}
     }
     return spl.join()//returns new string from original;
 }
