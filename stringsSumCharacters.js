@@ -12,5 +12,9 @@ function comp(str1, str2) {
 
 const x = "A pot of tea helps to pass the evening.";
 const y = "The small pup gnawed a hole in the sock.";
+const z = ""
+
 
 console.log(comp(x, y));
+
+//logs false
