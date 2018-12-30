@@ -21,4 +21,3 @@ function sum(arr) {
     }
 }
 
-console.log(range(1, 10));
