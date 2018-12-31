@@ -4,3 +4,7 @@ function myPi(n) {
     var x = parseFloat(Math.PI.toFixed(n));
     return x;
 }
+
+console.log(myPi(15));
+
+// logs 3.141592653589793
