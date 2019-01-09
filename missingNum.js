@@ -1,5 +1,5 @@
-Create a function that takes an array of numbers between 1 and 10 (excluding one number) 
-and returns the missing number.
+// Create a function that takes an array of numbers between 1 and 10 (excluding one number) 
+// and returns the missing number.
 
 function missingNums(arr) {
     let sorted = arr.sort();
@@ -12,7 +12,3 @@ function missingNums(arr) {
     return missing;
 }
 
-// Test.assertEquals(missingNums([7, 2, 3, 6, 5, 9, 1, 4, 8]), 10)
-
-
-1 2 3 4 5 6 7 8 9
