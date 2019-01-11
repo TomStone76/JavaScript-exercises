@@ -12,3 +12,5 @@ function sortNumsAscending(arr) {
     });
         return arr;
 }
+
+console.log(sortNumsAscending([3, 1, 4, 2]));
