@@ -9,5 +9,3 @@ function highLow(str) {
     secondArr.push(max, min)
     return secondArr.join(" ")
 }
-
-console.log(highLow("33 346 7511 1 7 7547"));
