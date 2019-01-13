@@ -9,9 +9,3 @@ function uniqueSort(arr) {
     });
     return duplicates
 }
-
-let x = [3, 3, 9, 9, 2, 2, 1, 1];
-
-console.log(uniqueSort(x));
-
-//logs [ 1, 2, 3, 9 ]
