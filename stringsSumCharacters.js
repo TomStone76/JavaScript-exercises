@@ -16,5 +16,3 @@ const z = ""
 
 
 console.log(comp(x, y));
-
-//logs false

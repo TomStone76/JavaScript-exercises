@@ -7,17 +7,17 @@
 // Next, write a sum function that takes an array of numbers and returns the sum of these numbers. 
 // Run the example program and see whether it does indeed return 55.
 
-function findRange(start, end) {
-    let arr = [];
-    arr.push(start, end);
+// function findRange(start, end) {
+//     let arr = [];
+//     arr.push(start, end);
     
-}
+// }
 
-let total = 0;
+// let total = 0;
 
-function sum(arr) {
-    for (var i = 0; i < arr.length; i++) {
-        total += arr[i];
-    }
-}
+// function sum(arr) {
+//     for (var i = 0; i < arr.length; i++) {
+//         total += arr[i];
+//     }
+// }
 
