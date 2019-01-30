@@ -2,10 +2,12 @@
 // In the array (the first argument), if an element occures more than N times (the second argument), 
 // remove the extra occurences and return the result.
 
+var x = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5]
+var y = 4
+
 function deleteOccurrences(arr, num) {
-    let x = arr, y = num, count;
-    let newArr = x.filter
-    for (let i = 0; i < x.length; i++) {
-        //If something occurs in x more than y times, filter it out and push it to a new array.
-    }
+    const filterArr = x.filter(item => {
+        
+
+    })
 }
