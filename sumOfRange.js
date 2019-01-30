@@ -15,9 +15,8 @@
 
 // let total = 0;
 
-// function sum(arr) {
-//     for (var i = 0; i < arr.length; i++) {
-//         total += arr[i];
-//     }
-// }
+function sum(arr) {
+    const reducer = (accumulator, currentValue) => accumulator + currentValue
+    return arr.reduce(reducer)
+}
 
