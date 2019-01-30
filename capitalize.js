@@ -7,7 +7,8 @@ const x = "The small pup gnawed a hole in the sock."
 function makeTitle(str) {
     var arr = str.split(' ')
     const capital = arr.map(x => x[0].toUpperCase() + x.substring(1))
-    return capital
+    const joined = capital.join(' ')
+    return joined
 }
 
 console.log(makeTitle(x))
