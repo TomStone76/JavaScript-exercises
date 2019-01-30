@@ -7,13 +7,12 @@
 // Next, write a sum function that takes an array of numbers and returns the sum of these numbers. 
 // Run the example program and see whether it does indeed return 55.
 
-// function findRange(start, end) {
-//     let arr = [];
-//     arr.push(start, end);
+function findRange(start, end) {
+    const range = (start, end) => { 
+        Array.from({ length: (end - start) / 1 }, (_, i) => start (i * 1))
+    }
     
-// }
-
-// let total = 0;
+}
 
 function sum(arr) {
     const reducer = (accumulator, currentValue) => accumulator + currentValue
