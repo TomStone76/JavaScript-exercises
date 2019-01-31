@@ -2,7 +2,7 @@
 // converts the first character of each word to uppercase. 
 // Return the newly formatted string.
 
-const x = "The small pup gnawed a hole in the sock."
+const x = "a cup of tea helps to pass the evening"
 
 function makeTitle(str) {
     var arr = str.split(' ')
