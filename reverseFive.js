@@ -3,6 +3,13 @@
 // Strings passed in will consist of only letters and spaces. 
 // Spaces will be included only when more than one word is present.
 
+
+var x = 'Yoshi is a cute dog.'
+
 function reverse(str) {
-    
+    var arr = str.split(' ')
+    return arr
+
 }
+
+console.log(reverse(x))
