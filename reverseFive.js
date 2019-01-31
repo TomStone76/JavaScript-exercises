@@ -8,7 +8,10 @@ var x = 'Yoshi is a cute dog.'
 
 function reverse(str) {
     var arr = str.split(' ')
-    return arr
+    const newArr = arr.map(word => {
+        
+    })
+    return newArr
 
 }
 
