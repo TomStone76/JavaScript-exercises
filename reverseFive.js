@@ -9,7 +9,7 @@ var x = 'Yoshi is a cute dog.'
 function reverse(str) {
     var arr = str.split(' ')
     const newArr = arr.map(word => {
-        
+        word.toUpperCase()
     })
     return newArr
 

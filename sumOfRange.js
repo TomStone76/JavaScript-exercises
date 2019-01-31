@@ -11,8 +11,10 @@ function findRange(start, end) {
     const range = (start, end) => { 
         Array.from({ length: (end - start) / 1 }, (_, i) => start (i * 1))
     }
-    
+    return range
 }
+
+console.log(findRange(1, 10))
 
 function sum(arr) {
     const reducer = (accumulator, currentValue) => accumulator + currentValue
