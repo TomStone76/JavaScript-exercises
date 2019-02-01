@@ -14,8 +14,6 @@ function findRange(start, end) {
     return range
 }
 
-console.log(findRange(1, 10))
-
 function sum(arr) {
     const reducer = (accumulator, currentValue) => accumulator + currentValue
     return arr.reduce(reducer)
