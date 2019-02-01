@@ -1,9 +1,10 @@
 // Write a function that takes three input values (a, b, c) and returns the number of equal values.
 
 function equal(a, b, c) {
-    let arr = []
-    let counter = 0
+    let arr = [], counter = 0
+
     arr.push(a, b, c);
+    
     for (let i = 0; i < arr.length; i++) {
         if (i[0] === i[1]) {
             counter++
@@ -15,3 +16,4 @@ function equal(a, b, c) {
     }
     return counter
 }
+
