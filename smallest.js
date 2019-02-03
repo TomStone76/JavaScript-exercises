@@ -8,8 +8,5 @@
 // });
 
 function sumTwoSmallestNums(arr) {
-    var sorted = arr.sort(function(a, b){return a - b});
-    return sorted
+    
 }
-
-console.log(sumTwoSmallestNums([1, 9, 2, 8, 3]));
