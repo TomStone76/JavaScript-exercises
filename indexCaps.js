@@ -7,7 +7,7 @@ function indexOfCaps(str) {
     let arr = str.split('')
     let newArr = []
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] == arr[i].toUpperCase() && arr[i].toUpperCase() != arr[i].toLowerCase()) {
+        if (arr[i] == arr[i].toUpperCase() && arr[i].toUpperCase() == arr[i].toLowerCase()) {
             newArr.push(arr.indexOf(arr[i]))
         }
     }
