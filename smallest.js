@@ -10,11 +10,12 @@
 var arr = [3, 1, 4, 2, 5]
 
 function sumTwoSmallestNums(arr) {
-    let x = arr.sort()
-    let y = []
+    let x = arr.sort(), y = []
     y.push(x.shift())
     y.push(x.shift())
-    return y
+    const reducer = (accumulator, currentVal) => accumulator + currentVal
+    let z = y.reduce(reducer)
+    return z
 }
 
 console.log(sumTwoSmallestNums(arr))
