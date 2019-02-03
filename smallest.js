@@ -7,7 +7,7 @@
 //     return sorted.indexOf(x) >= y;
 // });
 
-var arr = [3, 1, 4, 2, 5]
+var arr = [12, 435, 234, 123, 643, 658, 124]
 
 function sumTwoSmallestNums(arr) {
     let x = arr.sort(), y = []
