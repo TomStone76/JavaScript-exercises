@@ -6,5 +6,24 @@
 // If the first and last characters are the same, return "Two's a pair.".
 
 function flipEndChars(str) {
-    
+    let len = str.length
+    if (len < 2) {
+        return "Incompatible."
+    } else if (len >= 2) {
+        for (let i = 0; i < len; i++) {
+            if (!(len < 2) && (typeof str === "string") && (str[0] !== str[len - 1])) {
+                return   str.substring(len - 1) + str.substring(1, len - 1) + str[0]
+            } 
+            else if (typeof str !== "string") {
+                return "Incompatible."
+            } 
+            else if (str[0] === str.substring(len - 1)) {
+                return "Two's a pair."
+            }
+        }
+    }
 }
+
+console.log(flipEndChars(''))
+
+
