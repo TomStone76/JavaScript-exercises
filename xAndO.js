@@ -6,23 +6,21 @@
 // When neither an x nor an o is in the string, return true.
 
 function XO(str) {
-    let z = str;
-    let x, y;
-
-    if (z != "") {
-        for (let i = 0; i < z.length; i++) {
-            x = str.match(/x/gi).length;
-            y = str.match(/o/gi).length;
-        }
-
-        if (x === y) {
-            return true;
-        } else if (x != y) {
+    let format = str.toLowerCase()
+	let x = format.match(/x/gi), o = format.match(/o/gi);
+    let arr = format.split('')
+    
+	if (arr.includes('x') && arr.includes('o')) {
+		if (x.length === o.length) {
+            return true
+        } else {
             return false
         }
-    }
-    
-    if (z === "") {
-        return true;
+    } else if (arr.includes('x') && !arr.includes('o')) {
+        return false
+    } else if (!arr.includes('x') && arr.includes('o')) {
+        return false
+    } else if (!arr.includes('x') && !arr.includes('o')) {
+        return true
     }
 }
