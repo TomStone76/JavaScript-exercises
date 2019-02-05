@@ -5,36 +5,14 @@
 // She asks you to write a program that tells her the ratings of the items after the lowest one is removed.
 // Create a function that takes an array of integers and removes the smallest value.
 
-
-// function removeSmallest(arr) {
-//     var empty = []
-//     if (arr === empty) {
-        
-//         return empty
-//     }
-//         for (let i = 0; i < arr.length; i++) {
-//             let min = Math.min(...arr)
-//             return min
-//         }
-//     // }
-// }
-
-// function removeSmallest(arr) {
-//     const mapper = arr.map(function(item) {
-//         if (arr === [1]) {
-//             let empty = [1].shift()
-//             return '[]'
-//         }
-//     })
-// }
-
 function removeSmallest(arr) {
-    if (arr === []) {
-        return []
-    }
-    else {
-        return 'Yoshi'
+    let x = []
+    let min = Math.min(...arr)
+    let positionMin = arr.indexOf(min)
+    if (arr === x) {
+        return x
+    } else if (arr != x) {
+        arr.splice(positionMin, 1)
+        return arr
     }
 }
-
-console.log(removeSmallest([]))

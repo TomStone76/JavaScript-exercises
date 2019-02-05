@@ -8,8 +8,10 @@ function isIsogram(str) {
     let formatted = [...new Set(arr)].join('')
     
     if (lower === formatted) {
-        return true
+        return true // if the original is equal to the isogram-formatted one, it's an isogram.
     } else {
-        return false
+        return false // if the original and the isogram-formatted one are different, it's not an isogram
     }
 }
+
+console.log(isIsogram('subdermatoglyphic'))
