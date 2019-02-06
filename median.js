@@ -6,7 +6,7 @@ function median(arr) {
         return (arr.length + 1) / 2
     } else {
         for (let i = 0; i < arr.length; i++) {
-            
+            let first = arr.slice(0, arr.length/2)
         }
     }
 }
