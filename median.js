@@ -5,10 +5,9 @@ function median(arr) {
     if (arr.length / 2 === 0) {
         return (arr.length + 1) / 2
     } else {
-        for (let i = 0; i < arr.length; i++) {
-            let first = arr.slice(0, arr.length/2)
-        }
+        let first = arr.slice(0, arr.length/2)
+        return first
     }
 }
 
-console.log(median([2, 5, 6, 6, 3, 4]))
+console.log(median([2, 5, 6, 5, 6, 3, 4]))
