@@ -10,8 +10,8 @@
 // Date
 
 function dataType(value) {
-    if (!(arr instanceof Date) && !Array.isArray(value) {
-
+    if (!(value instanceof Date) && !Array.isArray(value)) {
+        return typeof value
     }
 }
 
