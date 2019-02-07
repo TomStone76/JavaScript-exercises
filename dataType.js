@@ -10,8 +10,8 @@
 // Date
 
 function dataType(value) {
-    if () {
-        
+    if (!(arr instanceof Date) && !Array.isArray(value) {
+
     }
 }
 
@@ -21,6 +21,6 @@ function dataType(value) {
 
 // console.log(typeof x)
 
-// var y = new Date()
+var y = new Date()
 
-// console.log(y instanceof Date)
+console.log(!(y instanceof Date))
