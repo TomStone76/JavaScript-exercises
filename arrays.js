@@ -1,24 +1,26 @@
 // Create a function that takes two arrays and combines them 
 // by alternatingly taking elements from each array in turn.
+let x = [1, 97];
+let y = ['a', 'b', 'c', 'd', 'e', 'f'];
 
 function mergeArrays(a, b) {
-    let newArr = []
-    let count
+    let newArr = [];
+    let count;
 
     if (a.length > b.length) {
-        count = a.length
+        count = a.length;
     } else {
-        count = b.length
+        count = b.length;
     }
 
     for (let i = 0; i < count; i++) {
-        newArr.push(a[i])
+        if (typeof a[i] != 'undefined') newArr.push(a[i]);
         for (let j = 0; j < 1; j++) {
-            newArr.push(b[i])
+            if (typeof b[i] != 'undefined') newArr.push(b[i]);
         }
     }
 
-    const merged = newArr.filter(item => typeof item != 'undefined')
-
-    return merged
+    return newArr;
 }
+
+console.log(mergeArrays(x, y))

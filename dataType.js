@@ -10,7 +10,7 @@
 // Date
 
 function dataType(value) {
-    if (!(value instanceof Date) && !Array.isArray(value)) {
+    if (!(value instanceof Date) && !Array.isArray(value) && !(typeof value === 'null')) {
         return typeof value
     } else if ((value instanceof Date) || (Array.isArray(value))) {
         if (value instanceof Date) {
@@ -18,5 +18,7 @@ function dataType(value) {
         } else if (Array.isArray(value)) {
             return 'array'
         }
+    } else if (typeof value === 'null') {
+        return null
     }
 }
