@@ -5,11 +5,12 @@ let x = ['a', 'b', 'c']
 let y = [1, 2, 3, 4]
 
 function mergeArrays(a, b) {
+    let flag = true
     let combined = a.concat(b)
     let formatted = []
-    for (let i = 0; i < combined.length; i++) {
+    if (flag === true) {
+        
+    } else if (flag === false) {
         
     }
 }
-
-console.log(mergeArrays(x, y))
