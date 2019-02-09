@@ -20,14 +20,3 @@ function dataType(value) {
         }
     }
 }
-
-// console.log(dataType([1, 2, 3, 4, 5])) //CORRECT
-// console.log(dataType({key: "value"})) //CORRECT
-// console.log(dataType("This is an example string...")) //CORRECT
-// console.log(dataType(2017)) // CORRECT
-// console.log(dataType(true)) // CORRECT
-// console.log(dataType(null))
-// console.log(dataType(undefined))
-// console.log(dataType(new Date()))
-
-console.log(typeof null)
