@@ -9,8 +9,12 @@ function mergeArrays(a, b) {
     let combined = a.concat(b)
     let formatted = []
     if (flag === true) {
-        
+        for (let i = 0; i < a.length; i++) {
+
+        }
     } else if (flag === false) {
-        
+        for (let i = 0; i < b.length; i++) {
+            
+        }
     }
 }
