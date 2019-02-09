@@ -2,5 +2,7 @@
 // finds the integer which appears an odd number of times.
 
 function findOdd(arr) {
-    
+    for (let i = 0; i < arr.length; i++) {
+        
+    }
 }
