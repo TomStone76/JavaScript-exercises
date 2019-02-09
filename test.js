@@ -1,11 +1,10 @@
-function factorial(num) {
-    if (num < 0) {
-        return -1
-    } else if (num == 1) {
-        return 1
-    } else {
-        return (num * factorial(num - 1))
-    }
+let num = Math.floor(Math.random() * 10)
+
+let param = process.argv[2]
+
+function compare(x) {
+    let y = (x === num)
+    return y ? "correct guess!" : "incorrect guess!"
 }
 
-console.log(factorial(4))
+console.log(compare(param))
