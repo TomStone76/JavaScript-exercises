@@ -5,8 +5,7 @@
 let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
 
 function countPosSumNeg(arr) {
-
-    if (typeof arr === 'object' || arr === []) {
+    if (arr === null || arr.length === 0) {
         return [];
     } else {
         let positive = [], negative = []; // hold neg and pos nums from input
@@ -29,4 +28,4 @@ function countPosSumNeg(arr) {
     } 
 }
 
-console.log(countPosSumNeg(null))
+console.log(countPosSumNeg(nums))
