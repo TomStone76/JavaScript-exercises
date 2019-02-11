@@ -3,9 +3,12 @@
 // Separate each set with a dash.
 
 function accum(str) {
-	for (let i = 0; i < str.length; i++) {
-       return str[i].repeat([i])
-    }
+
+    let split = str.split('')
+	// for (let i = 0; i < str.length; i++) {
+    //    return str[i].repeat(2)
+    // }
+    return split
 }
 
 console.log(accum('abcd'))
