@@ -9,5 +9,13 @@
 // and "not found" if the second character doesn't occur again.
 
 function allAboutStrings(str) {
-    
+    let arr = [];
+    let len = str.length;
+    let firstChar = str.charAt(0);
+    arr
+        .push(...len)
+        .push(...firstChar)
+    return arr
 }
+
+console.log(allAboutStrings("Computer"))
