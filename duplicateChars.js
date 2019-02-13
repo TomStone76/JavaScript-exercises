@@ -4,8 +4,10 @@
 function duplicateCount(str) {
     let count;
 
-    for (let i = 0; i < str.length; i++) {
-        if (str[i] === str[i + 1]) {
+    let sorted = str.split('').sort();
+
+    for (let i = 0; i < sorted.length; i++) {
+        if (sorted[i] === sorted[i + 1]) {
             count += 1;
         }
     }
