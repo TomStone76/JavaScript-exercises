@@ -7,9 +7,9 @@ let x = "H3ll0 Wor1d";
 function countAll(str) {
     let letters = [], numbers=[];
 
-    let formatted = str.split('').length
+    let formatted = str.split('');
 
-    for (let i = 0; i < formatted; i++) {
+    for (let i = 0; i < formatted.length; i++) {
         if (typeof formatted[i] === 'string') {
             letters.push(formatted[i]);
         } else if (typeof formatted[i] === 'number') {
@@ -18,13 +18,11 @@ function countAll(str) {
     }
 
     let count = {
-        "'LETTERS'": letters.length,
-        "'DIGITS'": numbers.length
+        "LETTERS": letters.length,
+        "DIGITS": numbers.length
     }
 
-    return count
+   return formatted;
 }
 
-
-
-console.log(count);
+console.log(countAll(x));
