@@ -14,3 +14,5 @@ function duplicateCount(str) {
 
     return count;
 }
+
+console.log(duplicateCount('Indivisibilities'))
