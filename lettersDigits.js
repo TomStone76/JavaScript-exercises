@@ -9,6 +9,14 @@ function countAll(str) {
 
     const filtered = str.split('').filter(item => item != ' ');
 
+    for (let i = 0; i < filtered.length; i++) {
+        if (isNaN(filtered[i])) {
+            letters.push(filtered[i]);
+        } else {
+            numbers.push(filtered[i]);
+        }
+    }
+
     let count = {
         "LETTERS": letters.length,
         "DIGITS": numbers.length
