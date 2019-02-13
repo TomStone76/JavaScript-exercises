@@ -4,11 +4,8 @@
 let a = [1, 1, 2, -2, 5, 2, 4, 4, -1, -2, 5]
 
 function findOdd(arr) {
-    let count = 0;
-    for (var i = 0; i < arr.length; i++) {
-        
-    }
-    
+    let sorted = arr.sort(function(a, b){return a - b});
+    return sorted
 }
 
 console.log(findOdd(a))
