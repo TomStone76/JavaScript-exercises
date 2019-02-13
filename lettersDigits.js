@@ -5,21 +5,24 @@
 let x = "H3ll0 Wor1d";
 
 function countAll(str) {
-    let count = {
-        "'LETTERS'": 0,
-        "'DIGITS'": 0
-    }
-
-    let letters = [], nums=[];
+    let letters = [], numbers=[];
 
     let formatted = str.split('').length
 
     for (let i = 0; i < formatted; i++) {
         if (typeof formatted[i] === 'string') {
-            letters.push(formatted)
+            letters.push(formatted[i]);
+        } else if (typeof formatted[i] === 'number') {
+            numbers.push(formatted[i]);
         }
     }
 
+    let count = {
+        "'LETTERS'": letters.length,
+        "'DIGITS'": numbers.length
+    }
+
+    return count
 }
 
 
