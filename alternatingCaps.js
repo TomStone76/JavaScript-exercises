@@ -13,5 +13,3 @@ function alternatingCaps(str) {
     })
     return mapped.join('')
 }
-
-console.log(alternatingCaps(test))
