@@ -5,8 +5,10 @@
 let x = "abcs"
 
 function accum(str) {
-    for (let i = 0; i < str.length; i++) {
-        let y = str[i].repeat(2)
+    let arr = str.split('')
+
+    for (let i = 0; i < arr.length; i++) {
+        let y = arr[i].repeat(2)
         return y
     }
 }
