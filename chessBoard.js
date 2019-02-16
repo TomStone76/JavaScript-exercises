@@ -1,12 +1,4 @@
-
-// for (i = 0; i < 4; i++) {
-//     console.log(" # # # #");
-//     console.log("# # # #");
-// }
-
-let size = 8;
-
-let board = "";
+let size = 8, board = "";
 
 for (let y = 0; y < size; y++) {
     for (let x = 0; x < size; x++) {
@@ -18,5 +10,3 @@ for (let y = 0; y < size; y++) {
     }
     board += "\n";
 }
-
-console.log(board);
