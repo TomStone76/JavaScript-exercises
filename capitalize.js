@@ -5,9 +5,9 @@
 const x = "a cup of tea helps to pass the evening"
 
 function makeTitle(str) {
-    var arr = str.split(' ')
-    const capital = arr.map(x => x[0].toUpperCase() + x.substring(1))
-    return capital.join('');
+    var arr = str.split(' ');
+    const capital = arr.map(x => x[0].toUpperCase() + x.substring(1));
+    return capital.join(' ');
 }
 
 console.log(makeTitle(x))
