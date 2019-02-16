@@ -2,17 +2,18 @@
 // number of alphanumeric characters that occur more than once.
 
 function duplicateCount(str) {
-    let count;
+    let count = 0;
 
-    let sorted = str.split('').sort();
+    let sorted = str.toLowerCase().split('').sort();
 
     for (let i = 0; i < sorted.length; i++) {
         if (sorted[i] === sorted[i + 1]) {
-            count += 1;
+            count++;
         }
     }
 
-    return count;
-}
+    let set1 = new Set(sorted);
 
-console.log(duplicateCount('Indivisibilities'))
+    let newArr = Array.from(set1).length;
+
+console.log(duplicateCount('Indivisibilities'));
