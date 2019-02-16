@@ -7,5 +7,3 @@ function findOdd(arr) {
     let sorted = arr.sort(function(a, b){return a - b});
     return sorted
 }
-
-console.log(findOdd(a))
