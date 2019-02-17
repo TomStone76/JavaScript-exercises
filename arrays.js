@@ -22,5 +22,3 @@ function mergeArrays(a, b) {
 
     return newArr;
 }
-
-console.log(mergeArrays(x, y))

@@ -5,12 +5,16 @@
 let x = "abcs"
 
 function accum(str) {
-    let arr = str.split('')
+    let arr = str.split(''), newArr = []
+    let count = 2;
 
     for (let i = 0; i < arr.length; i++) {
-        let y = arr[i].repeat(2)
-        return y
+        arr[i].repeat(count);
+        newArr.push(arr[i]);
+        count += 1
     }
+
+    return newArr;
 }
 
 console.log(accum(x))
