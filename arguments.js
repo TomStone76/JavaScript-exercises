@@ -2,5 +2,5 @@
 // argument it was called with.
 
 function numArgs() {
-	
+	return arguments.length;
 }
