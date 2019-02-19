@@ -4,8 +4,11 @@
 var obj = ({a: 1, b: 2, c: 3});
 
 function keysAndValues(obj) {
-    // return Object.keys(obj) + ', ' + Object.values(obj);
-    
+    let keys = [], vals = [];
+    keys.push(Object.keys(obj));
+    vals.push(Object.values(obj));
+    return keys + vals;
+
 }
 
 console.log(keysAndValues(obj))
