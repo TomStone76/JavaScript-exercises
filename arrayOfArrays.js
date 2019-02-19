@@ -7,5 +7,5 @@
 // z argument: Item contained within each subarray(s).
 
 function matrix(x, y, z) {
-    
+    for 
 }
