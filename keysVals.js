@@ -7,8 +7,7 @@ function keysAndValues(obj) {
     let keys = [], vals = [];
     keys.push(Object.keys(obj));
     vals.push(Object.values(obj));
-    return keys + vals;
-
+    return '[[' + keys + '], [' + vals + ']]';
 }
 
 console.log(keysAndValues(obj))
