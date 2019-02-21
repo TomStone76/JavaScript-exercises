@@ -5,7 +5,9 @@
 // x argument: Number of subarrays contained within the main array.
 // y argument Number of items contained within each subarray(s).
 // z argument: Item contained within each subarray(s).
-desktop
+
+let x = [];
+
 function matrix(x, y, z) {
     let container = [];
 
