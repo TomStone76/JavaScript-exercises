@@ -5,8 +5,7 @@
 function getMiddle(str) {
     let len = str.length
     if (len % 2 === 0) {
-        let x = str.substring(0, len/2)
-        let y = str.substring(len/2, len)
+        let x = str.substring(0, len/2), y = str.substring(len/2, len)
         return x.slice(-1) + y.charAt(0)
     } else if (len % 2 !== 0) {
         let x = str.substring(0, (len/2) + 1)
