@@ -12,14 +12,3 @@ function letterCheck(arr) {
     }
     return flag;
 }
-
-console.log(letterCheck(["trances", "nectar"]))
-console.log(letterCheck(["THE EYES", "they see"]))
-console.log(letterCheck(["assert", "staring"]))
-console.log(letterCheck(["arches", "later"]))
-console.log(letterCheck(["dale", "caller"]))
-console.log(letterCheck(["parses", "parsecs"]))
-console.log(letterCheck(["replays", "adam"]))
-console.log(letterCheck(["mastering", "streaming"]))
-console.log(letterCheck(["drapes", "compadres"]))
-console.log(letterCheck(["deltas", "slated"]))
