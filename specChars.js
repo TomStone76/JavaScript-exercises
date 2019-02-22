@@ -3,5 +3,5 @@
 // The only non-alphanumeric characters allowed are dashes -, underscores _ and spaces.
 
 function removeSpecialCharacters(str) {
-    
+    return str.replace(/\W|_/g, '');
 }
