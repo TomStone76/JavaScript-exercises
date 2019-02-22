@@ -6,4 +6,4 @@ function removeSpecialCharacters(str) {
     return str.replace(/\W|_/g, '');
 }
 
-console.log(removeSpecialChars());
+console.log(removeSpecialCharacters('%fd76$fd(-)6GvKlO.'));
