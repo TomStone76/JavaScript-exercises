@@ -5,3 +5,5 @@
 function removeSpecialCharacters(str) {
     return str.replace(/\W|_/g, '');
 }
+
+console.log(removeSpecialChars());
