@@ -2,8 +2,6 @@
 // new string with each new character accumulating by +1. 
 // Separate each set with a dash.
 
-let x = "abcs"
-
 function accum(str) {
     let arr = str.split(''), newArr = []
     let count = 2;
@@ -16,5 +14,3 @@ function accum(str) {
 
     return newArr;
 }
-
-console.log(accum(x))
