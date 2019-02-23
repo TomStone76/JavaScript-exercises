@@ -7,5 +7,3 @@ function doubleChar(str) {
     }
     return newStr;
 }
-
-console.log(doubleChar("Yoshi"));
