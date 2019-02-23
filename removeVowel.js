@@ -5,9 +5,3 @@ function remove(str) {
     var x = str.replace(/[aeiou]/g, "");
     return x
 }
-
-const y = "abcdefghijklmnopqrstuvwxyz";
-
-console.log(remove(y));
-
-//logs bcdfghjklmnpqrstvwxyz
