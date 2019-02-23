@@ -1,8 +1,5 @@
 // Create a function that takes two arrays and combines them 
 // by alternatingly taking elements from each array in turn.
-let x = [1, 97];
-let y = ['a', 'b', 'c', 'd', 'e', 'f'];
-
 function mergeArrays(a, b) {
     let newArr = [];
     let count;
