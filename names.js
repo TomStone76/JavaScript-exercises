@@ -2,5 +2,5 @@
 // single string in the format "last, first".
 
 function concatName(firstName, lastName) {
-
+    return lastName + ', ' + firstName
 }
