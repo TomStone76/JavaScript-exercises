@@ -4,5 +4,5 @@
 // Return that value.
 
 function remainder(x, y) {
-    
+    return x % y;
 }
