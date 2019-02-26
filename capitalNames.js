@@ -4,8 +4,8 @@
 let names = ['steve', 'mIkE', 'jOHN'];
 
 function capMe(arr) {
-    const cap = arr.map(x => x[0].toUpperCase());
-    return cap.join(' ');
+    const cap = arr.map(x => x[0].toUpperCase() + x.substring(1, x.length));
+    return cap;
 }
 
 console.log(capMe(names));
