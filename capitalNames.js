@@ -7,3 +7,5 @@ function capMe(arr) {
     const cap = arr.map(x => x[0].toUpperCase());
     return cap.join(' ');
 }
+
+console.log(capMe(names));
