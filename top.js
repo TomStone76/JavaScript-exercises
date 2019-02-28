@@ -3,8 +3,7 @@
 // not have notes then let's assume their top note is equal to 0.
 
 function getStudentTopNotes(students) {
-    const notes = students.map(note => {
-        Math.max(students.notes);
-    })
-    return notes;
+        const notes = students.map(note => {
+            Math.max(students.notes);
+        })     
 }
