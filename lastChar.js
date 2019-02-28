@@ -10,10 +10,11 @@ function sortByLast(str) {
     const arr2 = arr.map(function(item) {
         return item.split('').reverse().join('');
     })
-    const arr3 = arr2.map(function(item) {
+    let flipped = arr2.sort()
+    const arr3 = flipped.map(function(item) {
         return item.split('').reverse().join('');
     })
-    return arr2.sort();
+    return arr3;
 }
 
 console.log(sortByLast(one));
