@@ -4,6 +4,7 @@
 
 function getStudentTopNotes(students) {
     const notes = students.map(note => {
-
+        Math.max(students.notes);
     })
+    return notes;
 }
