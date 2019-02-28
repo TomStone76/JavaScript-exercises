@@ -6,15 +6,11 @@ let two = "stab traction artist approach";
 let three = "sample partner autonomy swallow trend";
 
 function sortByLast(str) {
-    let arr = str.split(' '); // breaks string into array
-    const arr2 = arr.map(function(item) {
-        return item.split('').reverse().join('');
-    })
-    let flipped = arr2.sort()
-    const arr3 = flipped.map(function(item) {
-        return item.split('').reverse().join('');
-    })
-    return arr3;
+    let arr = str.split(' '); 
+    const arr2 = arr.map(x => x.split('').reverse().join(''));
+    let reversed = arr2.sort();
+    const arr3 = reversed.map(x => x.split('').reverse().join(''));
+    return arr3.join(' ');
 }
 
 console.log(sortByLast(one));
