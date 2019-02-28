@@ -7,3 +7,4 @@ function getStudentTopNotes(students) {
             Math.max(students.notes);
         })     
 }
+
