@@ -18,9 +18,3 @@ function minMaxLengthAverage(arr) {
     newArr.push(e);
     return newArr;
 }
-
-let x = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
-
-console.log(minMaxLengthAverage(x));
-
-//logs [ 10, 100, 10, 55 ]
