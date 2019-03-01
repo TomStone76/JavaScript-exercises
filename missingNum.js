@@ -5,7 +5,4 @@ function missingNums(arr) {
     const reducer = (accumulator, currentVal) => accumulator + currentVal
     let sum = arr.reduce(reducer)
     return 55 - sum
-
 }
-
-console.log(missingNums([1, 2, 3, 4, 6, 7, 8, 9, 10]))
