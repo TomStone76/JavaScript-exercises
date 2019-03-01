@@ -11,7 +11,3 @@ function median(arr) {
         } 
     }
 }
-
-let x = [20, 40, 20, 30, 50, 60, 70, 0, 20]
-
-console.log(median(x))
