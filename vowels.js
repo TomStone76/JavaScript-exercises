@@ -9,6 +9,4 @@ function countVowels(str) {
         }
     }
     return vowels.length
-} 
-
-console.log(countVowels("The small pup gnawed a hole in the sock."))
+}
