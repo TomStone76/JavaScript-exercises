@@ -6,5 +6,3 @@ function compare(x) {
     let y = (x === num)
     return y ? "correct guess!" : "incorrect guess!"
 }
-
-console.log(compare(param))
