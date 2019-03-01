@@ -17,5 +17,3 @@ function allAboutStrings(str) {
         .push(...firstChar)
     return arr
 }
-
-console.log(allAboutStrings("Computer"))
