@@ -10,6 +10,4 @@ function hackerSpeak(str) {
    .replace(/s/g, '5')
 }
 
-console.log(hackerSpeak('aeios'))
-
 //NOT my own solution. From https://edabit.com/challenge/cada8J3AWGRhwQhkk
