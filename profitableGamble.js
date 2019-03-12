@@ -12,5 +12,6 @@
 // since the net profit is 0.2 * 50 - 9 = 1 and 1 > 0.
 
 function profitableGamble(prob, prize, pay) {
-    
+    if ((prob * prize - pay) > 0) { return true; } 
+	else { return false; }
 }
