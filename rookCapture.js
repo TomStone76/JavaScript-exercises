@@ -10,5 +10,12 @@
 // can take your opponents rook (at E8) by moving horizontally.
 
 function canCapture([yourRook, opponentsRook]) {
-    
+    let y = [], o = [];
+    y.push(yourRook); o.push(opponentsRook);
+    let c = y + o;
+    if ((c[0] === c[2]) || (c[1] === c[3])) {
+        return true;
+    } else {
+        return false;
+    }
 }
