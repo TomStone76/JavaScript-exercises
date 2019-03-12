@@ -2,5 +2,5 @@
 // A plural word is one that ends in s.
 
 function isPlural(word) {
-    return word.charAt(word.length) === 's';
+    return word.split('').pop() === 's';
 }
