@@ -12,5 +12,6 @@
 // S stands for Scissors
 
 function calculateScore(games) {
+    let aWins = [], bWins = [];
     
 }
