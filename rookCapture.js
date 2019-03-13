@@ -15,11 +15,3 @@ function canCapture([yourRook, opponentsRook]) {
     let c = y + o;
     return c[0] === c[2] || c[1] === c[3];
 }
-
-console.log(canCapture(["A8", "E8"]));
-
-console.log(canCapture(["A1", "B2"]));
-
-console.log(canCapture(["H4", "H3"]));
-
-console.log(canCapture(["F5", "C8"]));
