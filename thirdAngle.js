@@ -8,13 +8,13 @@
 // For example: missingAngle(11, 20) should return "obtuse", since the missing angle would be 149 degrees, which makes it obtuse.
 
 function missingAngle(angle1, angle2) {
-    let angle = 180 - angle1 + angle2;
-    if (angle < 90) {
-        return 'acute';
-    } else if (angle == 90) {
-        return 'right';
-    } else if ((angle > 90) && (angle < 180)) {
+    let missing = 180 - (angle1 + angle2);
+    if (missing > 90) {
         return 'obtuse';
+    } else if (missing === 90) {
+        return 'right'; 
+    } else if (missing < 90) {
+        return 'acute';
     }
 }
 
