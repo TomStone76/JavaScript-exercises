@@ -9,7 +9,15 @@
 
 function isSmooth(sentence) {
     let flag = true;
-    return sentence.split(' ')[0];
+    // return sentence.split(' ')[0];
+    let arr = sentence.split(' ');
+    for (let i = 0; i < [...arr].length; i++) {
+        if (arr[i].split('').pop() != arr[i+1].split('').shift()) {
+            flag = false;
+        }
+        
+    }
+    
 }
 
 console.log(isSmooth("Carlos swam masterfully."));
