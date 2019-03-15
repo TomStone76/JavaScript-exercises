@@ -3,9 +3,5 @@
 
 function comp(str1, str2) {
     var x = str1.length, y = str2.length;
-    if (x === y) {
-        return true;
-    } else {
-        return false;
-    }
+    return x === y;
 }

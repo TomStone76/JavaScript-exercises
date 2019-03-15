@@ -8,5 +8,8 @@
 // Since "Carlos" ends with an "s" and swam begins with an "s" and swam ends with an "m" and masterfully begins with an "m".
 
 function isSmooth(sentence) {
-    
+    let flag = true;
+    return sentence.split(' ')[0];
 }
+
+console.log(isSmooth("Carlos swam masterfully."));
