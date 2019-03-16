@@ -2,7 +2,7 @@
 
 function findEvenNums(num) {
     let arr = [];
-    for (let i=2; i <= num; i+=2) {
+    for (let i=2; i<=num; i+=2) {
         arr.push(i);
     }
     return arr;
