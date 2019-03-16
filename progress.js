@@ -6,5 +6,12 @@
 // total number of progress days.
 
 function progressDays(runs) {
-    
+    let count = 0;
+    for (i = 0; i < runs.length; i++) {
+        if (runs[i + 1] > runs[i]) {
+            count++;
+        }
+    }
+    return count;
 }
+console.log(progressDays([10, 11, 12, 9, 10]))
