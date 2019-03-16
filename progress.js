@@ -14,4 +14,3 @@ function progressDays(runs) {
     }
     return count;
 }
-console.log(progressDays([10, 11, 12, 9, 10]))
