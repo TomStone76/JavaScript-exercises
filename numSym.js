@@ -4,11 +4,8 @@
 function isSymmetrical(num) {
     var x = num.toString()
     var sym = x.split("").reverse().join("");
-    if (x === sym) {
-        return true;
-    } else {
-        return false;
-    }
+    return x === sym;
+     
 }
 
 //Thanks to https://stackoverflow.com/questions/38188696/trying-to-find-if-a-number-is-a-palindrome-in-js for help with the syntax.
