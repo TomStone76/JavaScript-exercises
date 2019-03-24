@@ -2,10 +2,12 @@
 // An adverb is a word that ends with ly.
 
 function countAdverbs(sentence) {
-    let arr = sentence.substr(0, sentence.length - 1).split(' ');
-    for (let i = 0; i < arr.length; i++) {
-        
+    const a = sentence.split(' ').map(x => x.replace(/\W/g, ''));
+    let c = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i].substr(a[i].length - 2, a[i].length - 1) == 'ly') {c++;}
     }
+    return c;
 }
 
-console.log(countAdverbs('She ran hurriedly towards the stadium.'))
+//could've used str.endsWith()
