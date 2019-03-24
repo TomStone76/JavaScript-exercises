@@ -13,5 +13,7 @@
 
 function calculateScore(games) {
     let aWins = [], bWins = [];
-    
+    for (let i = 0; i < games.length; i++) {
+        
+    }
 }
