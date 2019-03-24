@@ -6,9 +6,9 @@
 // Otherwise return false.
 
 function isPrefix(word, prefix) {
-
+    return word.startsWith(prefix.substr(0, prefix.length - 1));
 }
 
 function isSuffix(word, suffix) {
-    
+    return word.endsWith(suffix.substr(1, suffix.length - 1));
 }
