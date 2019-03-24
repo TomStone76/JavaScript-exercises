@@ -5,3 +5,4 @@ function largestSwap(num) {
     let a=num.toString(), b=a[1]+a[0];
     return a >= b;
 }
+console.log(largestSwap(34))
