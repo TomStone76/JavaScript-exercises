@@ -7,5 +7,23 @@
 // of integers, ignore the fulcrum (the middle number).
 
 function seesaw(num) {
+    let len = String(num).length;
+    let l = String(num).substring(0, len / 2);
+    let r = String(num).substring(len / 2, len);
+    let o = r.substr(1, len);
     
+    if (num === null || num === undefined) {
+        return 'balanced';
+    }
+    if (!(num === null || num === undefined)) {
+        if (len % 2 !== 0) {
+            if (l == o) {return 'balanced';}
+            if (l > o) {return 'left';}
+            if (l < o) {return 'right';}
+        } else if (len % 2 === 0) {
+            if (l == r) {return 'balanced';}
+            if (l > r) {return 'left';}
+            if (l < r) {return 'right';}
+        }
+    }
 }
