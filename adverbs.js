@@ -7,7 +7,7 @@ function countAdverbs(sentence) {
     for (let i = 0; i < a.length; i++) {
         if (a[i].substr(a[i].length - 2, a[i].length - 1) == 'ly') {c++;}
     }
-    return c;
+    return a;
 }
 
-//could've used str.endsWith()
+console.log(countAdverbs('The small, pup, gnawed a hole in the sock.'))

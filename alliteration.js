@@ -5,6 +5,6 @@
 function alliterationCorrect(sentence) {
     const filtered = sentence.split(' ').filter(word => word.length > 3);
     const first = filtered.map(x => x[0]);
-    let test = first.every((x, y, z) => x === z[0]);
+    const test = first.every((x, y, z) => x === z[0]);
     return test;
 }
