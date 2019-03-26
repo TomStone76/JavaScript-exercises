@@ -6,6 +6,10 @@ let b = 'Neuquen'
 let c = 'Not a palindrome'
 
 function isPalindrome(str) {
-
+    let a = str.replace(/\W/g, '').toLowerCase();
+    return a.split('').reverse().join('') === a;
 }
 
+console.log(isPalindrome(a));
+console.log(isPalindrome(b));
+console.log(isPalindrome(c));
