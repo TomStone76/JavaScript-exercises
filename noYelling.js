@@ -2,11 +2,10 @@
 // or exclamation marks ! into a sentence only ending with one.
 
 function noYelling(phrase) {
-    // let clean = phrase.replace(/\W/g, '');
-    let start = phrase.split(' ')
-    let end = phrase.split(' ').pop();
-    if (end.endsWith('!') || end.endsWith('?')) {
-
-    }
-    return ending;
+    let arr = phrase.split(' ')
+    let start = arr.slice(0, -1), end = phrase.split(' ').pop();
+    let clean = end.replace(/\W/g, '');
+    return clean
 }
+
+console.log(noYelling('Oh my fucking god!!!!!'));
