@@ -5,9 +5,17 @@ function noYelling(phrase) {
     let arr = phrase.split(' ')
     let start = arr.slice(0, -1), end = phrase.split(' ').pop();
     let clean = end.replace(/\W/g, '');
-    if (end.endsWith('?')) { clean = clean + '?' };
-    if (end.endsWith('!')) { clean = clean + '!'};
-    return start.join(' ') + ` ${clean}`;
+    let result = start.join(' ') + ` ${clean}`
+  
+    if (!(phrase.endsWith('?') || phrase.endsWith('!'))) {
+		return phrase;		
+	} else if ((phrase.endsWith('?') || phrase.endsWith('!'))) {
+		if (phrase.endsWith('?')) {
+			return result.trim() + '?'
+		} else if (phrase.endsWith('!')) {
+            return result.trim() + '!'
+        }
+    }   
 }
 
 console.log(noYelling('Oh my fucking god???'));
