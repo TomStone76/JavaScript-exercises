@@ -7,7 +7,7 @@ function noYelling(phrase) {
     let clean = end.replace(/\W/g, '');
     if (end.endsWith('?')) { clean = clean + '?' };
     if (end.endsWith('!')) { clean = clean + '!'};
-    return start.join(' ') + ' ' + clean;
+    return start.join(' ') + ` ${clean}`;
 }
 
 console.log(noYelling('Oh my fucking god???'));
