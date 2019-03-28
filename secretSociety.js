@@ -4,5 +4,8 @@
 // Create a function that takes in an array of names and return's the name of the secret society.
 
 function societyName(friends) {
-    
+    const f = friends.map(n => n[0]);
+    return f.sort().join('').toUpperCase();
 }
+
+console.log(societyName(["Phoebe", "Chandler", "Rachel", "Ross", "Monica", "Joey"]))
