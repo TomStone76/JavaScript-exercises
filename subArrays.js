@@ -4,15 +4,7 @@
 function countIdentical(arr) {
     const check = arr.every((a) => a.length === 1);
     const filtered = arr.filter(function(a) {
-        return a.every((x, y, z) => x === z[0]);
+        return a.every((x, y) => x === y[0]);
     })
-
-    // if (check) {
-    //     return arr.length;
-    // } else if (!check) {
-    //     return filtered.length;
-    // }
-    
+    return (check ? arr.length : filtered.length);
 }
-
-console.log(countIdentical([[1], [2, 3], [4], [5]]));
