@@ -2,6 +2,15 @@
 // determine whether or not you are able to pay for the item. Change will always be 
 // represented in the following order: quarters, dimes, nickels, pennies.
 
-function amountDue(change, amountDue) {
-    
+function changeEnough(change, amountDue) {
+    let q = change[0] / 4;
+    let d = change[1] / 10;
+    let n = change[2] / 20;
+    let p = change[3] / 100;
+    return q + d + n + p >= amountDue;
 }
+
+//pennies: x/100
+//nickels: x/20
+//dimes: x/10
+//quarters x/4
