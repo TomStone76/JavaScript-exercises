@@ -6,11 +6,6 @@
 
 function correctStream(user, correct) {
     let score = [];
-    for (let i = 0; i < user.length; i++) {
-        for (let j = 0; j < correct.length; j++) {
-            user[i] === correct[j] ? score.push(1) : score.push(-1)
-        }
-    }
     return score;
 }
 

@@ -4,7 +4,7 @@ function mergeArrays(a, b) {
     let newArr = [];
     let count;
 
-    a.length > b.length ? count  = a.length : count = b.length;
+    a.length > b.length ? count = a.length : count = b.length;
 
     for (let i = 0; i < count; i++) {
         if (typeof a[i] != 'undefined') newArr.push(a[i]);
@@ -15,5 +15,3 @@ function mergeArrays(a, b) {
 
     return newArr;
 }
-
-console.log(mergeArrays([1, 1, 1, 1], [2, 2, 2, 2]));
