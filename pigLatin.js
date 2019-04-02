@@ -6,9 +6,12 @@ function pigLatin(str) {
     let formatted = str.substring(0, str.length - 1).toLowerCase().split(' ');
 
     const mapped = formatted.map(function(word) {
-        let subArr = word.split('');
-        let move = word.slice(1, word.length) + word[0] + 'ay'; // everything BUT the first letter
-        return move
+        if (word.startsWith('a', 'e', 'e', 'o', 'u')) {
+            return word + 'way';
+        } else if (word.startsWith('a', 'e', 'e', 'o', 'u')) {
+            let move = word.slice(1, word.length) + word[0] + 'ay'; // everything BUT the first letter
+            return move
+        }
     })
 
     return mapped;
