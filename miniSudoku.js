@@ -5,13 +5,9 @@
 // are no duplicates, and no numbers outside this range.
 
 function isMiniSudoku(square) {
-    let key = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ];
-    let formatted = square[0].concat(square[1], square[2]);
-    let flag;
-
-    for (let i = 0; i < formatted.length; i++) {
-        return !key.includes(formatted[i]) ? flag = false : flag = true;
-    }
+    let key = '1, 2, 3, 4, 5, 6, 7, 8, 9';
+    let formatted = square[0].concat(square[1], square[2]).sort()
+    return key === formatted.toString();
 }
 
-console.log(isMiniSudoku([[1, 3, 3], [3, 7, 8], [4, 5, 5]]));
+console.log(isMiniSudoku([[1, 3, 2], [9, 7, 8], [4, 5, 6]]));
