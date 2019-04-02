@@ -11,6 +11,6 @@ function retrieveMinor(semver) {
 }
 
 function retrievePatch(semver) {
-    return semver.lengt > 5
+    return semver.length > 5
     ? semver.substr(5) : semver[4];
 }
