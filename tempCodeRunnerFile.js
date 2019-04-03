@@ -1,5 +1,5 @@
- // if (f[i][0].match(v)) {
-        //     arr.push(f[i] + 'way');
-        // } else {
-        //     arr.push(f[i].slice(1, f[i].length) + f[i][0] + 'ay')
-        // }
+   // for (let i = 0; i < m.length; i++) {
+    //     if (m[i].length >= 3) {
+    //         if (m[i].join('') !== m[i].join('').sort()) flag = false;
+    //     } 
+    // }
