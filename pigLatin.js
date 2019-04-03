@@ -3,20 +3,19 @@
 // Words starting with a vowel (A, E, I, O, U) simply have "WAY" appended to the end.
 
 function pigLatin(str) {
-    let formatted = str.substring(0, str.length - 1).toLowerCase().split(' ');
+    let f = str.substring(0, str.length - 1).toLowerCase().split(' ');
+    let arr = [];
 
-    const mapped = formatted.map(function(word) {
-        if (word.startsWith('a', 'e', 'e', 'o', 'u')) {
-            return word + 'way';
-        } else if (word.startsWith('a', 'e', 'e', 'o', 'u')) {
-            let move = word.slice(1, word.length) + word[0] + 'ay'; // everything BUT the first letter
-            return move
+    for (let i = 0; i < f.length; i++) {
+        if (f[i][0].match(/[aeiou]/g)) {
+            arr.push(f[i] + 'way');
+        } else {
+            arr.push(f[i].slice(1, f[i].length) + f[i][0] + 'ay');
         }
-    })
+    }
 
-    return mapped;
+    let t = arr.join(' ') + str.charAt(str.length - 1);
+    return t[0].toUpperCase() + t.substring(1, t.length);
 }
 
-let test1 = "Cats are great pets.";
-
-console.log(pigLatin(test1));
+console.log(pigLatin('Hurry!'));
