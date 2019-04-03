@@ -18,4 +18,4 @@ function pigLatin(str) {
     return t[0].toUpperCase() + t.substring(1, t.length);
 }
 
-console.log(pigLatin('Hurry!'));
+console.log(pigLatin('Yaasss queen slay!'));
