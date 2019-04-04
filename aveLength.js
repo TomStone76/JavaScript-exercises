@@ -9,6 +9,6 @@ function averageWordLength(str) {
     return cleaned;
 }
 
-let s = 'I just planted a young oak tree, wonder how tall it will grow in a few years?';
+let s = 'I just planted a, tree?';
 
 console.log(averageWordLength(s));
