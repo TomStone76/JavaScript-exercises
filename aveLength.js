@@ -4,11 +4,14 @@
 
 function averageWordLength(str) {
     const reducer = (a, b) => a + b;
-    let cleaned = str.replace(/[^\w\s]/gi, '').split('');
-    const mapped = cleaned.map(word => word.length);
+    let cleaned = str.replace(/\W_/g, '');
+    // const mapped = cleaned.map(word => word.length);
+    // return mapped / cleaned.length
     return cleaned;
+
+
 }
 
-let s = 'I just planted a, tree?';
+let s = 'I just planted a young oak tree, wonder how tall it will grow in a few years?';
 
 console.log(averageWordLength(s));
