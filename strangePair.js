@@ -4,6 +4,6 @@
 // returns true if a pair of strings constitutes a strange pair, 
 // and false otherwise.
 
-function isStrangePair(str1, sstr2) {
-
+function isStrangePair(str1, str2) {
+    return str1.charAt(str1.length-1) === str2.charAt(0);
 }
