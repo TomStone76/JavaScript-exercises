@@ -5,5 +5,9 @@
 // and false otherwise.
 
 function isStrangePair(str1, str2) {
-    return str1.charAt(str1.length-1) === str2.charAt(0);
+    let a = str1.split('');
+    let b = str2.split('');
+    return (a.pop() == b.shift()) && (a.shift() == b.pop())
 }
+
+console.log(isStrangePair('bush', 'hubrib'));
