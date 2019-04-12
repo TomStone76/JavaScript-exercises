@@ -3,7 +3,10 @@
 
 function freeShipping(order) {
     const reducer = (a, b) => a + b;
-    const mapped = order.map(val => val[])
+    const vals = Object.keys(order).map(function(key) {
+        return vals[key];
+    })
+    return vals;
 }
 
 const obj = {
