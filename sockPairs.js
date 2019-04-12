@@ -6,5 +6,18 @@
 // The socks are represented as an unordered sequence.
 
 function sockPairs(socks) {
-    
+    if (socks === '') {
+        return 0;
+    } else if (socks !== '') {
+        let count = 0;
+        let sorted = socks.split('').sort();
+
+        for (let i = 0; i < sorted.length; i++) {
+            if (sorted[i] === sorted[i + 1]) count++;
+        }
+        // return count - 1;
+        return count;
+    }
 }
+
+console.log(sockPairs("ABABAB"));
