@@ -1,5 +1,5 @@
 function average(arr) {
-    const reducer = (accumulator, currentVal) => accumulator + currentVal
+    const reducer = (x, y) => x + y
     let result = arr.reduce(reducer) / arr.length
     return result
 }
