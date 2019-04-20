@@ -8,11 +8,3 @@ function freeShipping(order) {
     })
     return vals;
 }
-
-const obj = {
-    "Monopoly": 11.99,
-    "Secret Hitler": 35.99,
-    "Bananagrams": 13.99
-}
-
-console.log(freeShipping(obj));
