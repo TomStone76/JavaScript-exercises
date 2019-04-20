@@ -17,5 +17,3 @@ function noYelling(phrase) {
         }
     }   
 }
-
-console.log(noYelling('Oh my fucking god???'));
