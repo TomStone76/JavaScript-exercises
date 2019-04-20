@@ -2,5 +2,5 @@
 // true if it's divisible by 100, otherwise return false.
 
 function divisible(num) {
-    return num % 100 === 0 ? true : false;
+    return num % 100 === 0;
 }

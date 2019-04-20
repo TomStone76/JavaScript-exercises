@@ -5,7 +5,7 @@
 function hurdleJump(hurdles, jumpHeight) {
     let flag = true;
     for (let i = 0; i < hurdles.length; i++) {
-        if (hurdles[i] > jumpHeight) {flag = false};
+        if (hurdles[i] > jumpHeight) flag = false;
     }
     return flag;
 }
