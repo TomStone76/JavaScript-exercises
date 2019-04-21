@@ -9,9 +9,3 @@ class Circle {
     getArea() {return Math.PI  * Math.pow(this.radius, 2);}
     getPerimeter() {return 2 * Math.PI * this.radius;}
 }
-
-/*
-let c = new Circle(5);
-console.log(c.getArea());
-console.log(c.getPerimeter());
-*/
