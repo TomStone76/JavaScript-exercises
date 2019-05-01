@@ -9,8 +9,3 @@ function changeEnough(change, amountDue) {
     let p = change[3] / 100;
     return q + d + n + p >= amountDue;
 }
-
-//pennies: x/100
-//nickels: x/20
-//dimes: x/10
-//quarters x/4
