@@ -9,5 +9,3 @@ function countAdverbs(sentence) {
     }
     return a;
 }
-
-console.log(countAdverbs('The small, pup, gnawed a hole in the sock.'))
