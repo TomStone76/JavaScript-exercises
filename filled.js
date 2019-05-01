@@ -8,5 +8,5 @@ function completelyFilled(arr) {
 
 
 // function completelyFilled(arr) {
-//     return arr.join('').includes(' ');
+//     return !arr.join('').includes(' ');
 // }
