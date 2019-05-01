@@ -7,5 +7,3 @@ function alliterationCorrect(sentence) {
     const first = filtered.map(x => x[0]);
     return first.every((x, y, z) => x === z[0]);
 }
-
-console.log(alliterationCorrect('Nancy nimbly ran for the newts.'));
