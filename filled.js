@@ -5,8 +5,3 @@ function completelyFilled(arr) {
     }
     return flag;
 }
-
-
-// function completelyFilled(arr) {
-//     return !arr.join('').includes(' ');
-// }
