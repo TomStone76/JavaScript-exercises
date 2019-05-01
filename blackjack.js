@@ -23,5 +23,3 @@ function overTwentyOne(cards) {
     let sum = arr.reduce(reducer);
     return sum === 21;
 }
-
-console.log(overTwentyOne(["A", "J", "K"]));
