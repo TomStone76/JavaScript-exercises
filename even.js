@@ -7,5 +7,3 @@ function findEvenNums(num) {
     }
     return arr;
 }
-
-console.log(findEvenNums(9))
