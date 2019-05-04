@@ -2,5 +2,5 @@
 // return true if the number lies within the given range (inclusive).
 
 function isInRange(num, range) {
-    return 
+    return num>=range.min && num<=range.max;
 }
